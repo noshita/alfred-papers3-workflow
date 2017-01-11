@@ -38,7 +38,7 @@ def read_papers_entries():
     for entry in result:
         title = entry['title']
         if title == applescript.kMissingValue:
-                title = ''
+            title = ''
         if len(title) > 1 and title[0] == '{' and title[-1] == '}':
             title = title[1:-1]
         entry['title'] = title
